@@ -1,2 +1,3 @@
 FROM registry.k8s.io/sig-storage/nfs-subdir-external-provisioner:v4.0.2
-LABEL MAINTAINER=yubb BUILDTYPE=Aliyun
+LABEL maintainers="yubb"
+LABEL description="NFS subdir external provisioner"
