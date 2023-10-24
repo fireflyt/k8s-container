@@ -1,2 +1,2 @@
 # k8s-container
-k8s 容器
+k8s docker images build
