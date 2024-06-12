@@ -1,3 +1,7 @@
-FROM registry.k8s.io/sig-storage/nfs-subdir-external-provisioner:v4.0.18
+FROM gcr.io/distroless/static:latest
 LABEL maintainers="yubb"
 LABEL description="NFS subdir external provisioner"
+ARG binary=./bin/nfs-subdir-external-provisioner
+
+COPY ${binary} /nfs-subdir-external-provisioner
+ENTRYPOINT ["/nfs-subdir-external-provisioner"]
